@@ -1,0 +1,166 @@
+{
+  "name": "carbon-hbuilderx",
+  "description": "hbuilderx的carbon插件",
+  "displayName": "carbon-hbuilderx",
+  "version": "0.0.1",
+  "publisher": "retrocode",
+  "engines": {
+    "HBuilderX": "^2.7.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "main": "./extension",
+  "activationEvents": [
+    "onCommand:carbon.openurl"
+  ],
+  "contributes": {
+    "commands": [{
+      "command": "carbon.openurl",
+      "title": "导出至carbon"
+    }],
+    "menus": {
+      "editor/context": [{
+        "command": "carbon.openurl",
+        "group": "z_commands",
+        "when": "editorTextFocus"
+      }]
+    },
+    "configuration": {
+      "title": "carbon-hbuilderx",
+      "properties": {
+        "carbon-hbuilderx.carbonUrl": {
+          "type": "string",
+          "default": "http://carbon.retrocode.io",
+          "description": "carbon域名(默认是我自建的carbon镜像http://carbon.retrocode.io,若你想访问原版或者其他自建镜像请将对应域名填到这里,记得带上http(s))"
+        },
+        "carbon-hbuilderx.backgroundColor": {
+          "type": "string",
+          "default": "rgba(0,0,0,0)",
+          "description": "背景色(默认rgba(0,0,0,0))"
+        },
+        "carbon-hbuilderx.theme": {
+          "type": "string",
+          "default": "vscode",
+          "enum": [
+            "3024-night",
+            "a11y-dark",
+            "blackboard",
+            "base16-dark",
+            "base16-light",
+            "cobalt",
+            "dracula",
+            "duotone-dark",
+            "hopscotch",
+            "lucario",
+            "material",
+            "monokai",
+            "night-owl",
+            "nord",
+            "oceanic-next",
+            "one-light",
+            "one-dark",
+            "panda-syntax",
+            "paraiso-dark",
+            "seti",
+            "shades-of-purple",
+            "solarized dark",
+            "solarized light",
+            "synthwave-84",
+            "twilight",
+            "verminal",
+            "vscode",
+            "yeti",
+            "zenburn"
+          ],
+          "description": "代码主题(默认vscode)"
+        },
+        "carbon-hbuilderx.windowControls": {
+          "type": "boolean",
+          "default": true,
+          "description": "是否显示窗口"
+        },
+        "carbon-hbuilderx.windowTheme": {
+          "type": "string",
+          "default": "none",
+          "enum": ["none", "sharp", "bw", "boxy"],
+          "description": "窗口主题(显示窗口时生效,默认none)"
+        },
+        "carbon-hbuilderx.dropShadow": {
+          "type": "boolean",
+          "default": true,
+          "description": "是否显示窗口阴影"
+        },
+        "carbon-hbuilderx.dropShadowOffset": {
+          "type": "number",
+          "default": 0,
+          "description": "窗口阴影偏移offset-y(显示窗口阴影时生效,默认0)"
+        },
+        "carbon-hbuilderx.dropShadowBlurRadius": {
+          "type": "number",
+          "default": 0,
+          "description": "窗口阴影半径blur-radius(显示窗口阴影时生效,默认0)"
+        },
+        "carbon-hbuilderx.autoAdjustWidth": {
+          "type": "boolean",
+          "default": true,
+          "description": "自动调整宽度"
+        },
+        "carbon-hbuilderx.paddingVertical": {
+          "type": "number",
+          "default": 50,
+          "description": "padding上下边距(默认50)"
+        },
+        "carbon-hbuilderx.paddingHorizontal": {
+          "type": "number",
+          "default": 50,
+          "description": "padding左右边距(默认50)"
+        },
+        "carbon-hbuilderx.lineNumbers": {
+          "type": "boolean",
+          "default": false,
+          "description": "是否显示行数"
+        },
+        "carbon-hbuilderx.firstLineNumber": {
+          "type": "number",
+          "default": 0,
+          "description": "显示行数时的起始行数(显示行数时生效,默认0)"
+        },
+        "carbon-hbuilderx.fontFamily": {
+          "type": "string",
+          "default": "JetBrains Mono",
+          "enum": [
+            "Anonymous Pro",
+            "Droid Sans Mono",
+            "Fantasque Sans Mono",
+            "Fira Code",
+            "Hack",
+            "IBM Plex Mono",
+            "Inconsolata",
+            "Iosevka",
+            "JetBrains Mono",
+            "Monoid",
+            "Source Code Pro",
+            "Space Mono",
+            "Ubuntu Mono"
+          ],
+          "description": "字体类型(默认JetBrains Mono)"
+        },
+        "carbon-hbuilderx.fontSize": {
+          "type": "number",
+          "default": 16,
+          "description": "字体大小(默认16)"
+        },
+        "carbon-hbuilderx.lineHeight": {
+          "type": "number",
+          "default": 120,
+          "description": "行高(百分比值,默认120)"
+        }
+      }
+    }
+  },
+  "extensionDependencies": [
+    "plugin-manager"
+  ],
+  "dependencies": {}
+}
