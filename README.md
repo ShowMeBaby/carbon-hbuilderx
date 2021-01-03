@@ -1,6 +1,12 @@
-# carbon-hbuilderx
+# carbon-hbuilderx 在线生成精美的代码片段图片
 
-这是carbon插件的HbuilerX版本,本插件已发布至[HbuilerX插件市场](https://ext.dcloud.net.cn/plugin?id=3802)
+这是carbon插件的HbuilderX版本,本插件已发布至[HbuilerX插件市场](https://ext.dcloud.net.cn/plugin?id=3802)
+
+## 示例
+
+![1](https://gitee.com/retrocode/picture_bed/raw/master/image/1.png)
+
+![2](https://gitee.com/retrocode/picture_bed/raw/master/image/2.png)
 
 ## 使用说明
 
