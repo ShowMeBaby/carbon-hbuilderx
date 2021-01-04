@@ -2,7 +2,7 @@
   "name": "carbon-hbuilderx",
   "description": "hbuilderx的carbon插件",
   "displayName": "carbon-hbuilderx",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "publisher": "retrocode",
   "engines": {
     "HBuilderX": "^2.7.0"
@@ -15,16 +15,20 @@
     "onCommand:carbon.openurl"
   ],
   "contributes": {
-    "commands": [{
-      "command": "carbon.openurl",
-      "title": "导出至carbon"
-    }],
-    "menus": {
-      "editor/context": [{
+    "commands": [
+      {
         "command": "carbon.openurl",
-        "group": "z_commands",
-        "when": "editorTextFocus"
-      }]
+        "title": "导出至carbon"
+      }
+    ],
+    "menus": {
+      "editor/context": [
+        {
+          "command": "carbon.openurl",
+          "group": "z_commands",
+          "when": "editorTextFocus"
+        }
+      ]
     },
     "configuration": {
       "title": "carbon-hbuilderx",
@@ -83,7 +87,12 @@
         "carbon-hbuilderx.windowTheme": {
           "type": "string",
           "default": "none",
-          "enum": ["none", "sharp", "bw", "boxy"],
+          "enum": [
+            "none",
+            "sharp",
+            "bw",
+            "boxy"
+          ],
           "description": "窗口主题(显示窗口时生效,默认none)"
         },
         "carbon-hbuilderx.dropShadow": {
