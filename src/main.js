@@ -25,7 +25,7 @@ function log(title, text) {
 function openUrl(data) {
   const [codeWord, languageId] = data;
   const config = hx.workspace.getConfiguration("carbon-hbuilderx");
-  const carbonUrl = new URL(config.get("carbonUrl", 'http://carbon.retrocode.io'));
+  const carbonUrl = new URL(config.get("carbonUrl", 'https://carbon.supermario.vip'));
   const carbonSearchParams = {
     bg: encodeURIComponent(config.get("backgroundColor")), // 背景色支持rgba(默认rgba(0,0,0,0))
     t: config.get("theme"), // 代码主题(默认vscode)

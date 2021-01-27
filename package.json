@@ -2,7 +2,7 @@
   "name": "carbon-hbuilderx",
   "description": "hbuilderx的carbon插件",
   "displayName": "carbon-hbuilderx",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "publisher": "retrocode",
   "engines": {
     "HBuilderX": "^2.7.0"
@@ -35,8 +35,8 @@
       "properties": {
         "carbon-hbuilderx.carbonUrl": {
           "type": "string",
-          "default": "http://carbon.retrocode.io",
-          "description": "carbon域名(默认是我自建的carbon镜像http://carbon.retrocode.io,若你想访问原版或者其他自建镜像请将对应域名填到这里,记得带上http(s))"
+          "default": "https://carbon.supermario.vip",
+          "description": "carbon域名(默认是我自建的carbon镜像https://carbon.supermario.vip,若你想访问原版或者其他自建镜像请将对应域名填到这里,记得带上http(s))"
         },
         "carbon-hbuilderx.backgroundColor": {
           "type": "string",
